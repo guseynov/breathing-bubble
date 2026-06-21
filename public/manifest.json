@@ -1,6 +1,14 @@
 {
-  "short_name": "Breathing Bubble",
   "name": "Breathing Bubble",
+  "short_name": "Bubble",
+  "description": "A minimal guided breathing experience for short calming resets.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#02070c",
+  "background_color": "#020304",
+  "categories": ["health", "lifestyle", "productivity"],
   "icons": [
     {
       "src": "favicon.ico",
@@ -17,9 +25,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#14192f",
-  "background_color": "#090b14"
+  ]
 }

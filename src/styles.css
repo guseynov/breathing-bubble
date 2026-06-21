@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    font-family: "Mona Sans", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #000000;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    background:
+      radial-gradient(circle at 18% 24%, rgba(0, 153, 255, 0.2), transparent 24%),
+      radial-gradient(circle at 82% 72%, rgba(0, 153, 255, 0.14), transparent 22%),
+      linear-gradient(135deg, #02070c 0%, #020304 48%, #010203 100%);
+  }
+
+  body::before,
+  body::after {
+    content: "";
+    position: fixed;
+    inset: auto;
+    width: 32rem;
+    height: 32rem;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.38;
+    filter: blur(120px);
+  }
+
+  body::before {
+    top: -10rem;
+    left: -8rem;
+    background: rgba(0, 153, 255, 0.22);
+  }
+
+  body::after {
+    right: -8rem;
+    bottom: -10rem;
+    background: rgba(0, 153, 255, 0.18);
+  }
+}

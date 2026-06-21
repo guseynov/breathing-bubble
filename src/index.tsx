@@ -1,7 +1,7 @@
-import React from "react";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { Bubble } from "./components/bubble";
-import "./main.scss";
+import { App } from "./App";
+import "./styles.css";
 
 const rootElement = document.getElementById("root");
 
@@ -10,9 +10,7 @@ if (!rootElement) {
 }
 
 createRoot(rootElement).render(
-  <React.StrictMode>
-    <main className="main">
-      <Bubble />
-    </main>
-  </React.StrictMode>
+  <StrictMode>
+    <App />
+  </StrictMode>,
 );
