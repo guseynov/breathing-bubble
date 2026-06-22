@@ -56,4 +56,16 @@
     bottom: -10rem;
     background: rgba(0, 153, 255, 0.18);
   }
+
+  @keyframes bubble-step-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.2rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
